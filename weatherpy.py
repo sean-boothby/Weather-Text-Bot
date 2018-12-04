@@ -16,10 +16,10 @@ def checkweather(apikey):
     item = [lat,lon,descrip,stormdist,precip,rainchance,temp,sun]
 
 
-    text = str('The weather for you right now Mr.Boothby Latitude: {} Longitude: {}  Weather description: {} Distance to nearest storm: {} Precipitation: {} Chance of precip: {} Temperature: {} UV Factor: {}'.format(item[0],item[1],item[2],item[3],item[4],item[5],item[6],item[7]))
+    text = str('The weather for you right now Latitude: {}\n\n Longitude: {}\n\n  Weather description: {}\n\n Distance to nearest storm: {}\n\n Precipitation: {}\n\n Chance of precip: {}\n\n Temperature: {}\n\n UV Factor: {}\n\n'.format(item[0],item[1],item[2],item[3],item[4],item[5],item[6],item[7]))
     return text
 
 
 text = checkweather(config.API_KEY)
-print(text)
+
 
